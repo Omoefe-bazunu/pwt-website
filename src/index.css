@@ -50,6 +50,7 @@
 /* PROJECT SECTION */
 
 .ProjectImages {
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
   "p1 p2"
   "p3 p2";
@@ -82,7 +83,6 @@
 /* FEATURED SECTION */
 
 .FeaturedBooks {
-  background-color: aquamarine;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   grid-template-areas: 
@@ -296,5 +296,31 @@
     margin-top: 10px;
   }
 
+  .ProjectImages {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "p1"
+    "p2" 
+    "p3";
+  }
+
+  .ProjectImages .Image2, .ProjectImages .Image2, .ProjectImages .Image3 {
+    height: 300px;
+    margin-top: 10px;
+  }
   
+  .FeaturedBooks {
+    column-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "Book1"
+    "Book2" 
+    "Book3"
+    "Book4";
+  }
+
+  .FooterTexts p {
+    font-size: small;
+  }
+
   }

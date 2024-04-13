@@ -11,7 +11,7 @@
                     </div>
                     <div className="Main grid items-center mb-12">
                         <div className="ProjectsDisplay flex flex-col justify-start items-center ">
-                            <div className="ProjectImages grid items-center grid-cols-2 gap-1 w-full">
+                            <div className="ProjectImages grid items-center gap-1 w-full">
                                 <div className="Image1 h-64 w-full bg-cover bg-center bg-no-repeat bg-slate-600 border-b-2 border-purple-900"></div>
                                 <div className="Image2 h-full w-full bg-cover bg-center bg-no-repeat border-b-2 border-purple-900"></div>
                                 <div className="Image3 h-64 w-full bg-cover bg-center bg-no-repeat bg-slate-600 border-b-2 border-purple-900"></div>
