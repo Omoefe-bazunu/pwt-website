@@ -3,7 +3,7 @@ import { SectionHeader } from "./SectionHeader"
 export const AboutUsSection = () => {
   return (
     <div className="AboutUs-Wrapper w-full bg-yellow-50 flex justify-center items-center">
-        <div className="AboutUs-Inner w-5/6 flex flex-col items-center">
+        <div className="AboutUs-Inner w-5/6 flex flex-col items-center mb-24">
             <SectionHeader header="ABOUT US"/>
             <div className="Main flex justify-start gap-5 mt-10">
                 <div className="pwtImg bg-cover bg-center bg-no-repeat h-52 w-full "></div>

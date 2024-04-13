@@ -1,7 +1,7 @@
 
 export const NavBar = () =>{
   return (
-    <div className="NavBar-Wrapper w-full flex justify-center items-center flex-col">
+    <div className="NavBar-Wrapper w-full flex justify-center items-center flex-col sticky top-0">
       <div className="QuickLink-Wrapper w-full h-fit bg-purple-950 py-2">
       <div className="QickLinks my-0 mx-auto w-5/6 text-white flex justify-between items-center ">
             <div className="Contacts flex gap-x-10  justify-start items-center text-sm">

@@ -9,7 +9,7 @@ export const ServicesSection = () => {
     const WritingFeatures = ['Professional CV/RESUME', 'Business Proposal', 'Ads copies and Web Contents']
   return (
     <div className="Services-Wrapper flex justify-start items-center flex-col h-fit w-full bg-yellow-50">
-        <div className="Services-Inner w-5/6 ">
+        <div className="Services-Inner w-5/6 mb-24c ">
             <SectionHeader header="OUR SERVICES" />
             <p className="Intro text-center mt-3">Get the best of quality and affordability with our remote services. We take away distance barrier 
 by maintaining a strong communication with you on your preferred platform, giving you constant 
