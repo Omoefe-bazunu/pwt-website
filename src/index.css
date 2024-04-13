@@ -1,0 +1,61 @@
+
+/* src/styles/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(36, 34, 34, 0.87);
+  background-color: #fffcfc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles for Hero Section */
+
+.Hero-Inner {
+  background-image: url('./src/assets/BG3.jpg');
+}
+
+/* Services Section */
+#ServiceImage1 {
+  background-image: url('./src/assets/BG3.jpg');
+}
+#ServiceImage2 {
+  background-image: url('./src/assets/BG3.jpg');
+}
+#ServiceImage3 {
+  background-image: url('./src/assets/BG3.jpg');
+}
+
+.ProjectImages {
+  grid-template-areas: 
+  "p1 p2"
+  "p3 p2";
+}
+
+.ProjectImages .Image1 {
+  grid-area: p1;
+}
+
+.ProjectImages .Image2 {
+  grid-area: p2;
+  background-image: url('./src/assets/projects/AK Company.jpg');
+}
+
+.ProjectImages .Image3 {
+  grid-area: p3;
+}
+
+.pwtImg {
+  background-image: url('./src/assets/pwtprofile.jpg');
+}
