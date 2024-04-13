@@ -14,10 +14,10 @@ export const ServicesSection = () => {
             <p className="Intro text-center mt-3">Get the best of quality and affordability with our remote services. We take away distance barrier 
 by maintaining a strong communication with you on your preferred platform, giving you constant 
 updates about the progress and receiving your inputs till the job is completed to your taste.</p>
-            <div className="Service-Boxes-Wrapper place-items-center mt-10 grid grid-cols-3 W-full">
-                <ServiceBox ServiceTitle="WEBSITE DESIGN" list={WebFeatures} ServiceImage="ServiceImage1"/>
-                <ServiceBox ServiceTitle="BUSINESS DATA ANALYSIS" list={DataAnalysisFeatures} ServiceImage="ServiceImage2" />
-                <ServiceBox ServiceTitle="WRITING" list={WritingFeatures} ServiceImage="ServiceImage3" />
+            <div className="Service-Boxes-Wrapper place-items-center mt-10 grid W-full">
+                <ServiceBox ServiceTitle="WEBSITE DESIGN" list={WebFeatures} ServiceBox="Box1"/>
+                <ServiceBox ServiceTitle="BUSINESS DATA ANALYSIS" list={DataAnalysisFeatures} ServiceBox="Box2" />
+                <ServiceBox ServiceTitle="WRITING" list={WritingFeatures} ServiceBox="Box3" />
             </div>
             <CTABtn title="GET STARTED" />
         </div>

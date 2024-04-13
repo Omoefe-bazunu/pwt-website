@@ -15,14 +15,14 @@ const App = () => {
 
     <div className='App bg-red-700 h-screen flex flex-col w-full jusify-center items-center overflow-x-hidden'>
       <NavBar />
-      {/* <HeroSection />
+      <HeroSection />
       <ServicesSection />
       <ProjectsSection />
       <AboutUsSection />
       <ContactUsSection />
-      <FeaturedSection /> */}
+      <FeaturedSection />
       {/* <ProjectsPage /> */}
-      <BooksPage />
+      {/* <BooksPage /> */}
       <FooterSection />
     </div>
   )

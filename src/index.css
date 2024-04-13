@@ -20,22 +20,34 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Styles for Hero Section */
+/* HERO SECTION*/
 
 .Hero-Inner {
   background-image: url('./src/assets/BG3.jpg');
 }
 
-/* Services Section */
-#ServiceImage1 {
-  background-image: url('./src/assets/BG3.jpg');
+/* SERVICES SECTION */
+.Service-Boxes-Wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  grid-template-areas: 
+  "ServiceImage1  ServiceImage2 ServiceImage3";
 }
-#ServiceImage2 {
+
+#Box1 .Img {
   background-image: url('./src/assets/BG3.jpg');
+  grid-area: ServiceImage1;
 }
-#ServiceImage3 {
+#Box2 .Img {
   background-image: url('./src/assets/BG3.jpg');
+  grid-area: ServiceImage2;
 }
+#Box3 .Img {
+  background-image: url('./src/assets/BG3.jpg');
+  grid-area: ServiceImage3;
+}
+
+/* PROJECT SECTION */
 
 .ProjectImages {
   grid-template-areas: 
@@ -58,4 +70,231 @@
 
 .pwtImg {
   background-image: url('./src/assets/pwtprofile.jpg');
+
 }
+
+  /* ABOUT SECTION */
+  .ContactUsForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+/* FEATURED SECTION */
+
+.FeaturedBooks {
+  background-color: aquamarine;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-areas: 
+  "Book1 Book2 Book3 Book4";
+}
+
+.FeaturedBooks #Book1 {
+  grid-area: "Book1";
+}
+
+.FeaturedBooks #Book2 {
+  grid-area: "Book2";
+}
+
+.FeaturedBooks #Book3 {
+  grid-area: "Book3";
+}
+
+.FeaturedBooks #Book4 {
+  grid-area: "Book4";
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1030px) {
+  
+  .FeaturedBooks {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "Book1 Book2" 
+    "Book3 Book4";
+  }
+}
+
+@media only screen and (max-width: 915px) {
+
+  .Services-Inner .mainCTA {
+    margin-top: 10px;
+  }
+
+  .Service-Boxes-Wrapper {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    grid-template-areas: 
+    "ServiceImage1" 
+    "ServiceImage2" 
+    "ServiceImage3"
+    "ServiceImage3";
+  }
+
+  .AboutUs-Inner .Main {
+    flex-wrap: wrap;
+  }
+  .AboutUs-Inner .Main .pwtImg {
+    height: 400px;
+  }
+
+  .AboutUs-Inner .Main p {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  p {
+    font-size: x-large;
+  }
+
+  .ContactUsForm {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ContactUsForm input::placeholder, .ContactUsForm textarea::placeholder {
+    text-align: center;
+  }
+
+  .Projects-Inner .Intro h3 {
+    text-align: center;
+  }
+
+  .Intro {
+    margin-top: 30px;
+  }
+
+  .ProjectsBtn .line1 {
+    display: block;
+  }
+
+  .ServiceBox-Wrapper .Description ul {
+    font-size: 3rem;
+  }
+
+  .Footer-Inner {
+    flex-direction: column;
+    padding-top: 35px;
+  }
+
+  .Footer-Inner div {
+    padding-top: 0;
+  }
+
+  .QickLinks {
+    display: none;
+  }
+.NavLinks {
+  display: none;
+}
+
+}
+
+@media only screen and (max-width: 830px) {
+  
+.Hero-Inner h1,  .Hero-Inner .pText{
+  width: 500px;
+}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  /* HERO SECTION */
+  .Hero-Inner {
+    padding: 50px 20px;
+  }
+  .Hero-Inner h1,  .Hero-Inner .pText{
+    width: 90%;
+  }
+
+  .Hero-Inner h1 {
+    font-size: xx-large;
+  }
+  .Hero-Inner .pText {
+    font-size: large;
+    line-height: 20px;
+  }
+
+    .Hero-Inner .CTA-Btn {
+      padding: 10px 25px;
+      font-size: small;
+    }
+
+    /* SERVICES SECTION */
+  
+  .Services-Inner .mainCTA {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: small;
+  }
+
+  .Service-Boxes-Wrapper {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    grid-template-areas: 
+    "ServiceImage1" 
+    "ServiceImage2" 
+    "ServiceImage3";
+  }
+
+  .ServiceBox-Wrapper .Description{
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+
+  .SectionHeader {
+    font-size: x-large;
+  }
+
+  .serviceFeatures{
+    list-style-type: none;
+  }
+
+  .Services-Inner .Intro {
+    font-size:large;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  /* PROJECTS SECTION */
+
+  
+  .Projects-Inner {
+    margin-bottom: 5px;
+  }
+
+  .Projects-Inner .Intro {
+    margin-top: 15px;
+  }
+
+  .Projects-Inner .Intro h3 {
+    font-size: large;
+    line-height: 25px;
+    font-weight: 500;
+  }
+
+    /* ABOUT US SECTION */
+
+  .AboutUs-Inner .Main {
+    flex-wrap: wrap;
+  }
+  .AboutUs-Inner .Main .pwtImg {
+    height: 300px;
+  }
+
+  .AboutUs-Inner .Main p {
+    text-align: center;
+    padding: 0 20px;
+    font-size: large;
+    margin-top: 10px;
+  }
+
+  
+  }
