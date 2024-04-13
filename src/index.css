@@ -194,6 +194,8 @@
 
 }
 
+
+
 @media only screen and (max-width: 830px) {
   
 .Hero-Inner h1,  .Hero-Inner .pText{
@@ -202,7 +204,7 @@
 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 700px) {
 
   /* HERO SECTION */
   .Hero-Inner {
