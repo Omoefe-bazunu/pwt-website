@@ -1,5 +1,12 @@
 
+import { useState } from "react";
+import { TfiList } from "react-icons/tfi";
+import { TfiClose } from "react-icons/tfi";
+
+
 export const NavBar = () =>{
+const [toggle, setToggle] = useState(true);
+
   return (
     <div className="NavBar-Wrapper w-full flex justify-center items-center flex-col sticky top-0">
       <div className="QuickLink-Wrapper w-full h-fit bg-purple-950 py-2">
@@ -28,9 +35,10 @@ export const NavBar = () =>{
         </div>
       </div>
       <div className="NavBar-Wrapper bg-purple-900 w-full">
-        <div className="NavBar-Bg  my-0 mx-auto w-5/6 flex justify-between items-center h-16">
-          <div className="Logo">
-            <img src="../src/assets/pwtLogo.png" alt="pwt-logo" className="w-14" />
+        <div className="NavBar-Bg  my-0 mx-auto w-5/6 flex justify-between items-center h-20">
+          <div className="Logo flex justify-start items-center gap-4">
+          <img src="../src/assets/pwtLogo.png" alt="pwt-logo" className="w-14" />
+          <h1 className="text-white text-xl font-bold">PHENOMENAL WORLD TRADE</h1>
           </div>
           <div className="NavLinks text-whit my-0 h-full text-white" >
             <ul className="flex justify-end items-center gap-8 h-full p-0 m-0 cursor-pointer">
@@ -41,10 +49,27 @@ export const NavBar = () =>{
               <li className="list-none no-underline h-full flex items-center"><a href="#">CONTACT US</a></li>
             </ul>
           </div>
+          <div className="MenuIcon  text-white cursor-pointer hidden justify-center relative">
+            {toggle? <TfiList size = {40} onClick = {() => setToggle(false)} /> 
+            : <TfiClose size = {40} onClick = {() => setToggle(true)}/> }
+          </div>
 
         </div>
        
       </div>
+      {!toggle && (
+                  <div className='Bar flex flex-col scale-up-tr  w-fit h-fit pt-10 pb-28 bg-purple-800 px-2 absolute right-0 top-24 ' >
+                      <ul className='menu-link text-xl text-md px-4 text-white text-end w-fit text-nowrap flex justify-center flex-col align-center gap-y-4 font-light py-2'>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48">HOME</li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48">SERVICES</li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48">PROJECTS</li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48">ABOUT US</li>
+                        <li >CONTACT US</li>
+                       </ul>
+                  </div>
+                  
+              )
+              }
         
     </div>
   )
