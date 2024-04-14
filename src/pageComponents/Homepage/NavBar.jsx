@@ -43,7 +43,7 @@ const [toggle, setToggle] = useState(true);
           </div>
           <div className="NavLinks text-whit my-0 h-full text-white" >
             <ul className="flex justify-end items-center gap-8 h-full p-0 m-0 cursor-pointer">
-              <li className="list-none no-underline bg-slate-500 border-b-2 border-white h-full px-3 flex items-center"><NavLink to="/" className="active">HOME</NavLink></li>
+              <li className="list-none no-underline bg-purple-600 border-b-2 border-white h-full px-5 flex items-center"><NavLink to="/" className="active">HOME</NavLink></li>
               <li className="list-none no-underline h-full flex items-center"><a href="#Services">SERVICES</a></li>
               <li className="list-none no-underline h-full flex items-center"><NavLink to="/ProjectsPage">PROJECTS</NavLink></li>
               <li className="list-none no-underline h-full flex items-center"><a href="#About">ABOUT US</a></li>

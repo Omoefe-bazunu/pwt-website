@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const ServicesSection = () => {
     const WebFeatures = ['Responsive UI', 'Serach Engine Friendly', 'Zero Downtime', 'Continuous maintenance'];
-    const DataAnalysisFeatures = ['Complete Solution', 'Simple Reusable Templates', 'Video Use-Guide'];
+    const DataAnalysisFeatures = ['Complete Solution', 'Simple Reusable Templates', 'Physical/Remote Tutorial'];
     const WritingFeatures = ['Professional CV/RESUME', 'Business Proposal', 'Ads copies and Web Contents']
   return (
     <div id="Services" className="Services-Wrapper flex justify-start items-center flex-col h-fit w-full bg-yellow-50">
