@@ -1,6 +1,7 @@
 import { ServiceBox } from "./ServiceBox";
 import { CTABtn } from "./CTABtn";
 import { SectionHeader } from "./SectionHeader"
+import { Link } from "react-router-dom";
 
 
 export const ServicesSection = () => {
@@ -8,7 +9,7 @@ export const ServicesSection = () => {
     const DataAnalysisFeatures = ['Complete Solution', 'Simple Reusable Templates', 'Video Use-Guide'];
     const WritingFeatures = ['Professional CV/RESUME', 'Business Proposal', 'Ads copies and Web Contents']
   return (
-    <div className="Services-Wrapper flex justify-start items-center flex-col h-fit w-full bg-yellow-50">
+    <div id="Services" className="Services-Wrapper flex justify-start items-center flex-col h-fit w-full bg-yellow-50">
         <div className="Services-Inner w-5/6 mb-24c ">
             <SectionHeader header="OUR SERVICES" />
             <p className="Intro text-center mt-3">Get the best of quality and affordability with our remote services. We take away distance barrier 
@@ -19,7 +20,7 @@ updates about the progress and receiving your inputs till the job is completed t
                 <ServiceBox ServiceTitle="BUSINESS DATA ANALYSIS" list={DataAnalysisFeatures} ServiceBox="Box2" />
                 <ServiceBox ServiceTitle="WRITING" list={WritingFeatures} ServiceBox="Box3" />
             </div>
-            <CTABtn title="GET STARTED" />
+            <Link to="/ContactPage"><CTABtn title="GET STARTED" /></Link>
         </div>
     </div>
   )

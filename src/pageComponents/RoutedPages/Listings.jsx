@@ -1,7 +1,7 @@
 
 export const Listings = ({title, About1, About2, desc1, desc2}) => {
   return (
-    <div className="Listings-Wrapper w-full h-fit mb-24 mt-16">
+    <div className="Listings-Wrapper w-full h-fit mb-10 mt-16">
         <div className="Lft flex flex-col gap-3 w-full  ">
                 <div className="Title1 justify-start flex gap-3 items-center">
                     <p className="TitleText1 text-purple-900 w-fit text-nowrap font-medium cursor-pointer uppercase">{title}</p>

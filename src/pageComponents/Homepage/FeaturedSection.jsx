@@ -1,7 +1,7 @@
 
 import { BooksTemplates } from "./BooksTemplates"
 import { SectionHeader } from "./SectionHeader"
-
+import { Link } from "react-router-dom"
 
 export const FeaturedSection = () => {
 
@@ -9,7 +9,7 @@ export const FeaturedSection = () => {
     <div className="Featured-Wrapper flex justify-start items-center flex-col h-fit w-full bg-yellow-50">
         <div className="Featured-Inner w-5/6 ">
             <SectionHeader header="FEATURED" />
-            <p className="Intro text-center mt-3">Do you love reading books about Finance, Storytelling, Relationship and Cooking? Check out our featured collections of quality content books by seasoned authors to keep you inspired,informed. guided and entertained. CLICK HERE to see the collection.</p>
+            <p className="Intro text-center mt-3">Do you love reading books about Finance, Storytelling, Relationship and Cooking? Check out our featured collections of quality content books by seasoned authors to keep you inspired,informed. guided and entertained. <Link to="/BooksPage" className=" font-semibold text-purple-800 cursor-pointer">CLICK HERE</Link> to see the collection.</p>
             <div className="FeaturedBooks grid place-items-center mt-10 mb-24">
                 <BooksTemplates title="RIVER SIDE" id="Book1"/>
                 <BooksTemplates title="HOPE" id="Book2"/>

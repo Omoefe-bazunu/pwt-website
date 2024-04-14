@@ -74,7 +74,6 @@
 }
 
 
-
 /* HERO SECTION*/
 
 .Hero-Inner {
@@ -219,6 +218,10 @@
 
   .menu-link {
     padding-left: 40px;
+  }
+
+  #Footer {
+    height: 100vh;
   }
 
   .Services-Inner .mainCTA {

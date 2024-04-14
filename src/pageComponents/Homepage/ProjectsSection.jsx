@@ -1,8 +1,9 @@
-        import { SectionHeader } from "./SectionHeader"
+import { NavLink } from "react-router-dom"
+import { SectionHeader } from "./SectionHeader"
 
         export const ProjectsSection = () => {
         return (
-            <div className="ProjectsSection-Wrapper flex justify-center items-center w-full h-fit bg-white">
+            <div id="Projects" className="ProjectsSection-Wrapper flex justify-center items-center w-full h-fit bg-white">
                 <div className="Projects-Inner w-5/6 mb-24">
                     <SectionHeader header="OUR PROJECTS"/>
                     <div className="Intro w-full mt-16 flex justify-start flex-col">
@@ -18,7 +19,7 @@
                             </div>
                             <div className="ProjectsBtn w-full flex place-items-center gap-x-5 mt-12 mb-12">
                                 <div className="line1 h-px w-full bg-purple-950 flex-grow hidden"></div>
-                                <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer">SEE MORE PROJECTS</h3>
+                                <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"><NavLink to="/ProjectsPage">SEE MORE PROJECTS</NavLink></h3>
                                 <div className="line2 h-px w-full bg-purple-950 "></div>
                             </div>
                         </div>

@@ -1,30 +1,29 @@
-import { AboutUsSection } from "./pageComponents/Homepage/AboutUsSection";
+
+import { HomePage } from "./HomePage";
+import { HomeLayout } from "./pageComponents/HomeLayout";
 import { ContactUsSection } from "./pageComponents/Homepage/ContactUsSection";
-import { FeaturedSection } from "./pageComponents/Homepage/FeaturedSection";
-import { FooterSection } from "./pageComponents/Homepage/Footer";
-import { HeroSection } from "./pageComponents/Homepage/HeroSection";
-import { NavBar } from "./pageComponents/Homepage/NavBar";
-import { ProjectsSection } from "./pageComponents/Homepage/ProjectsSection";
-import { ServicesSection } from "./pageComponents/Homepage/ServicesSection";
 import { BooksPage } from "./pageComponents/RoutedPages/BooksPage";
 import { ProjectsPage } from "./pageComponents/RoutedPages/ProjectsPage";
+import {createBrowserRouter, 
+createRoutesFromElements,
+Route,
+RouterProvider} from 'react-router-dom'
+
+const router = createBrowserRouter (
+  createRoutesFromElements (
+    <Route path="/" element={<HomeLayout/>}>
+      <Route index element={<HomePage/>}/>
+      <Route path="ProjectsPage" element={<ProjectsPage />}/>
+      <Route path="BooksPage" element={<BooksPage />}/>
+      <Route path="ContactPage" element={<ContactUsSection/>}/>
+    </Route>
+  )
+)
 
 
-const App = () => {
+function App() {
   return (
-
-    <div className='App bg-red-700 h-screen flex flex-col w-full jusify-center items-center overflow-x-hidden'>
-      <NavBar />
-      {/* <HeroSection />
-      <ServicesSection />
-      <ProjectsSection />
-      <AboutUsSection />
-      <ContactUsSection />
-      <FeaturedSection /> */}
-      <ProjectsPage />
-      {/* <BooksPage /> */}
-      <FooterSection />
-    </div>
+      <RouterProvider router = {router}/>
   )
 }
 

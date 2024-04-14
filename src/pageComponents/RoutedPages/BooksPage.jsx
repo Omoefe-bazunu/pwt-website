@@ -15,7 +15,13 @@ const Book1 = {
         <div className="Booksage-Inner w-5/6">
             <PageHeader header="BOOK COLLECTIONS"/>
             <Listings title = {Book1.title} About1 = "ABOUT THE BOOK" About2 ="ABOUT THE AUTHOR" desc1 = {Book1.baboutTheBook} desc2 = {Book1.aboutTheAuthor} />
+            <div className="main w-full flex place-items-center gap-x-5 mb-24">
+              <div className="line h-px w-full bg-purple-950 flex-grow"></div>
+              <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer">Get this Book</h3>
+              <div className="line h-px w-full bg-purple-950 "></div>
+            </div>
         </div>
+
     </div>
   )
 }

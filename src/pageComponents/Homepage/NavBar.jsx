@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { TfiList } from "react-icons/tfi";
 import { TfiClose } from "react-icons/tfi";
+import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () =>{
@@ -42,11 +43,11 @@ const [toggle, setToggle] = useState(true);
           </div>
           <div className="NavLinks text-whit my-0 h-full text-white" >
             <ul className="flex justify-end items-center gap-8 h-full p-0 m-0 cursor-pointer">
-              <li className="list-none no-underline bg-slate-500 border-b-2 border-white h-full px-3 flex items-center"><a href="#" className="active">HOME</a></li>
-              <li className="list-none no-underline h-full flex items-center"><a href="#">SERVICES</a></li>
-              <li className="list-none no-underline h-full flex items-center"><a href="#">PROJECTS</a></li>
-              <li className="list-none no-underline h-full flex items-center"><a href="#">ABOUT US</a></li>
-              <li className="list-none no-underline h-full flex items-center"><a href="#">CONTACT US</a></li>
+              <li className="list-none no-underline bg-slate-500 border-b-2 border-white h-full px-3 flex items-center"><NavLink to="/" className="active">HOME</NavLink></li>
+              <li className="list-none no-underline h-full flex items-center"><a href="#Services">SERVICES</a></li>
+              <li className="list-none no-underline h-full flex items-center"><NavLink to="/ProjectsPage">PROJECTS</NavLink></li>
+              <li className="list-none no-underline h-full flex items-center"><a href="#About">ABOUT US</a></li>
+              <li className="list-none no-underline h-full flex items-center"><a href="#Contact">CONTACT US</a></li>
             </ul>
           </div>
           <div className="MenuIcon  text-white cursor-pointer hidden justify-center relative">
@@ -60,11 +61,11 @@ const [toggle, setToggle] = useState(true);
       {!toggle && (
                   <div className='Bar flex flex-col scale-up-tr  w-fit h-fit pt-10 pb-28 bg-purple-800 px-2 absolute right-0 top-24 ' >
                       <ul className='menu-link text-xl text-md px-4 text-white text-end w-fit text-nowrap flex justify-center flex-col align-center gap-y-4 font-light py-2'>
-                        <li className=" border-b-2 border-slate-300 pb-5 w-48">HOME</li>
-                        <li className=" border-b-2 border-slate-300 pb-5 w-48">SERVICES</li>
-                        <li className=" border-b-2 border-slate-300 pb-5 w-48">PROJECTS</li>
-                        <li className=" border-b-2 border-slate-300 pb-5 w-48">ABOUT US</li>
-                        <li >CONTACT US</li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/">HOME</NavLink></li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#About">SERVICES</a></li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/ProjectsPage">PROJECTS</NavLink></li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#About">ABOUT US</a></li>
+                        <li className=" pb-5 w-48"><a href="#Contact">CONTACT US</a></li>
                        </ul>
                   </div>
                   
