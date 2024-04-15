@@ -8,7 +8,7 @@ export const Listings = ({title, About1, About2, desc1, desc2, Cost}) => {
                     <div className=" h-px bg-purple-900 w-full flex-grow"></div>
                 </div>
             <div className="Image bg-cover bg-no-repeat bg-center flex justify-end items-end pb-3 pr-4 w-full h-72 bg-slate-500 border-b-2 border-purple-900">
-                <p className="text-purple-800 bg-white rounded-3xl py-2 px-4 w-fit text-xs font-medium">PRICE: NGN{Cost}</p>
+                <p className="Cost text-purple-800 bg-white rounded-3xl py-2 px-4 w-fit text-xs font-medium">PRICE: NGN{Cost}</p>
             </div>
         </div>
         <div className="Rgt flex flex-col justify-start items-start  w-full gap-3 h-full">
@@ -29,7 +29,7 @@ export const Listings = ({title, About1, About2, desc1, desc2, Cost}) => {
                 <p className="Description2 text-wrap pr-10">{desc2}</p>
             </div>
         </div>
-        <div className="main w-full flex place-items-center gap-x-5 mb-12 mt-5">
+        <div className="mainListing w-full flex place-items-center gap-x-5 mb-12 mt-5">
               <div className="line h-px w-full bg-purple-950 flex-grow"></div>
               <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"><Link to="/BooksPaymentPage">Get this Book</Link></h3>
               <div className="line h-px w-full bg-purple-950 "></div>

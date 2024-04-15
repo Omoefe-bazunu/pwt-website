@@ -2,6 +2,7 @@ import { Listings } from "./Listings"
 import { PageHeader } from "./PageHeader"
 
 export const ProjectsPage = () => {
+  
 
 // PROJECTS DETAILS
     const Project1 = {
@@ -15,6 +16,7 @@ export const ProjectsPage = () => {
     <div className="ProjectsPage-Wrapper w-full flex justify-center items-start flex-grow bg-white">
         <div className="ProjectsPage-Inner w-5/6">
             <PageHeader header="OUR PROJECTS"/>
+            <Listings title = {Project1.title} About1 = "PROJECT BRIEF INFORMATION" About2 ="CLIENT'S REVIEW" desc1 ={Project1.briefInformation} desc2 = {Project1.clientReview}/>
             <Listings title = {Project1.title} About1 = "PROJECT BRIEF INFORMATION" About2 ="CLIENT'S REVIEW" desc1 ={Project1.briefInformation} desc2 = {Project1.clientReview}/>
         </div>
     </div>

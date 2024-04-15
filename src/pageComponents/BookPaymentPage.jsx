@@ -9,7 +9,7 @@ export const BookPaymentPage = () => {
         <div className="BookPaymentPage-Inner w-5/6">
             <div className="mainCTA w-full flex place-items-center gap-x-5 mt-12 mb-5">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
-                <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer">PAYMENT PROCEDURE</h3>
+                <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium">PAYMENT PROCEDURE</h3>
                 <div className="line h-px w-full bg-purple-950 "></div>
             </div>
             <div className="main w-full flex items-center justify-between gap-x-5 mt-10">
