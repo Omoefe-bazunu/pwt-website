@@ -537,3 +537,18 @@
 }
 
 }
+
+@media only screen and (max-width: 300px) {
+
+
+.ProjectsBtn h3{
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+
+.ContactMain .mainCTA div, .Featured-Inner .mainCTA div {
+ display: none;
+}
+
+}

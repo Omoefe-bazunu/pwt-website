@@ -10,7 +10,7 @@ import { SectionHeader } from "./SectionHeader"
                         <h3 className="text-3xl text-wrap">TAKE THE TIME TO EXPLORE SOME OF THE PROJECTS WE HAVE COMPLETED FOR DIFFERENT CLIENTS</h3>
                         <div className="Partition h-px bg-purple-900 w-full mt-5 mb-5"></div>
                     </div>
-                    <div className="Main grid items-center mb-12">
+                    <div className="ProjectsMain grid items-center mb-12 w-full">
                         <div className="ProjectsDisplay flex flex-col justify-start items-center ">
                             <div className="ProjectImages grid items-center gap-1 w-full">
                                 <div className="Image1 h-64 w-full bg-cover bg-center bg-no-repeat bg-slate-600 border-b-2 border-purple-900"></div>
@@ -22,8 +22,6 @@ import { SectionHeader } from "./SectionHeader"
                                 <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"><NavLink to="/ProjectsPage">SEE MORE PROJECTS</NavLink></h3>
                                 <div className="line2 h-px w-full bg-purple-950 "></div>
                             </div>
-                        </div>
-                        <div className="ShortStatement h-full flex flex-col justify-start items-center ">
                         </div>
                     </div>
                     
