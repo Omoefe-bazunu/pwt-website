@@ -62,7 +62,7 @@ const [toggle, setToggle] = useState(true);
                   <div className='Bar flex flex-col scale-up-tr  w-fit h-fit pt-10 pb-28 bg-purple-800 px-2 absolute right-0 top-24 ' >
                       <ul className='menu-link text-xl text-md px-4 text-white text-end w-fit text-nowrap flex justify-center flex-col align-center gap-y-4 font-light py-2'>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/">HOME</NavLink></li>
-                        <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#About">SERVICES</a></li>
+                        <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#Services">SERVICES</a></li>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/ProjectsPage">PROJECTS</NavLink></li>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#About">ABOUT US</a></li>
                         <li className=" pb-5 w-48"><a href="#Contact">CONTACT US</a></li>

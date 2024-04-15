@@ -14,7 +14,7 @@ export const ProjectsPage = () => {
     // FUNCTION THAT RUNS OUTPUTS THE DETAILS - DO NOT TAMPER
   return (
     <div className="ProjectsPage-Wrapper w-full flex justify-center items-start flex-grow bg-white">
-        <div className="ProjectsPage-Inner w-5/6">
+        <div className="ProjectsPage-Inner w-5/6 mb-24">
             <PageHeader header="OUR PROJECTS"/>
             <Listings title = {Project1.title} About1 = "PROJECT BRIEF INFORMATION" About2 ="CLIENT'S REVIEW" desc1 ={Project1.briefInformation} desc2 = {Project1.clientReview}/>
             <Listings title = {Project1.title} About1 = "PROJECT BRIEF INFORMATION" About2 ="CLIENT'S REVIEW" desc1 ={Project1.briefInformation} desc2 = {Project1.clientReview}/>

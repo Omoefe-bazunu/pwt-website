@@ -89,15 +89,15 @@
 }
 
 #Box1 .Img {
-  background-image: url('./src/assets/BG3.jpg');
+  background-image: url('./src/assets/webdesign.jpg');
   grid-area: ServiceImage1;
 }
 #Box2 .Img {
-  background-image: url('./src/assets/BG3.jpg');
+  background-image: url('./src/assets/excel.jpg');
   grid-area: ServiceImage2;
 }
 #Box3 .Img {
-  background-image: url('./src/assets/BG3.jpg');
+  background-image: url('./src/assets/cv.jpg');
   grid-area: ServiceImage3;
 }
 
@@ -160,22 +160,32 @@
 
 .FeaturedBooks #Book1 {
   grid-area: "Book1";
+  background-image: url('/src/assets/river.jpg');
 }
 
 .FeaturedBooks #Book2 {
   grid-area: "Book2";
+  background-image: url('/src/assets/hope.jpg');
 }
 
 .FeaturedBooks #Book3 {
   grid-area: "Book3";
+  background-image: url('/src/assets/birthPlace.jpg');
 }
 
 .FeaturedBooks #Book4 {
   grid-area: "Book4";
+  background-image: url('/src/assets/intruder.jpg');
 }
 
 .ProjectsPage-Inner .mainListing, .ProjectsPage-Inner .Cost{
   display: none;
+}
+
+/* BOOKPAGE  */
+
+#River {
+  background-image: url('/src/assets/river.jpg');
 }
 
 /* RESPONSIVENESS */

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-export const Listings = ({title, About1, About2, desc1, desc2, Cost}) => {
+export const Listings = ({title, About1, About2, desc1, desc2, Cost, ListedImage}) => {
   return (
     <div className="Listings-Wrapper w-full h-fit mb-10 mt-16 flex flex-col">
         <div className="Lft flex flex-col gap-3 w-full  ">
@@ -7,7 +7,7 @@ export const Listings = ({title, About1, About2, desc1, desc2, Cost}) => {
                     <p className="TitleText1 text-purple-900 w-fit text-nowrap font-medium cursor-pointer uppercase">{title}</p>
                     <div className=" h-px bg-purple-900 w-full flex-grow"></div>
                 </div>
-            <div className="Image bg-cover bg-no-repeat bg-center flex justify-end items-end pb-3 pr-4 w-full h-72 bg-slate-500 border-b-2 border-purple-900">
+            <div className="Image bg-cover bg-no-repeat bg-center flex justify-end items-end pb-3 pr-4 w-full h-96 bg-slate-500 border-b-2 border-purple-900" id={ListedImage}>
                 <p className="Cost text-purple-800 bg-white rounded-3xl py-2 px-4 w-fit text-xs font-medium">PRICE: NGN{Cost}</p>
             </div>
         </div>
