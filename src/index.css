@@ -305,6 +305,14 @@
   font-size: large;
 }
 
+.Instruction, .BankDetails {
+  text-align: center;
+}
+
+.KKK {
+  display: block;
+}
+
 }
 
 
@@ -471,6 +479,40 @@
     margin-top: 3px;
     margin-bottom: 10px;
   }
+
+.BookPaymentPage-Inner .Option {
+  display: none;
+}
+
+.partition {
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.Option2 {
+  width: 100%;
+  font-size: large;
+}
+
+.Method{
+  width: 100%;
+  font-size: large;
+}
+
+.Instruction {
+  font-size: large;
+}
+
+.BankDetails p {
+  font-size: larger;
+  padding: 0 12px
+}
+
+.BankDetails {
+  margin-top: 15px;
+}
+
 }
 
 @media only screen and (max-width: 380px) {

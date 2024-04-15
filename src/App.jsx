@@ -1,5 +1,7 @@
 
 import { HomePage } from "./HomePage";
+import { BookPaymentPage } from "./pageComponents/BookPaymentPage";
+import { ErrorPage } from "./pageComponents/ErrorPage";
 import { HomeLayout } from "./pageComponents/HomeLayout";
 import { ContactUsSection } from "./pageComponents/Homepage/ContactUsSection";
 import { BooksPage } from "./pageComponents/RoutedPages/BooksPage";
@@ -15,7 +17,9 @@ const router = createBrowserRouter (
       <Route index element={<HomePage/>}/>
       <Route path="ProjectsPage" element={<ProjectsPage />}/>
       <Route path="BooksPage" element={<BooksPage />}/>
+      <Route path="BooksPaymentPage" element={<BookPaymentPage />}/>
       <Route path="ContactPage" element={<ContactUsSection/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
     </Route>
   )
 )
