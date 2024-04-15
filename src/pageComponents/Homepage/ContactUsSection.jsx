@@ -6,7 +6,7 @@ export const ContactUsSection = () => {
     <div id="Contact" className="ContactUs-Wrapper w-full bg-white flex justify-center items-center">
         <div className="ContactUs-Inner w-5/6 flex flex-col items-center">
             <SectionHeader header="CONTACT US"/>
-            <div className="ContactMain grid gap-5 mt-10 h-fit w-full mb-24">
+            <div className="ContactMain grid gap-5 mt-10 h-fit w-full mb-24 ">
                 <form className="ContactUsForm flex justify-start items-center gap-10 w-full mt-5">
                     <div className="inputs flex flex-col gap-y-5 justify-center items-center w-full  h-full">
                         <input type="text" placeholder="Your Full name" name="fullName"  className="Input1 py-3 px-5 w-full rounded-3xl outline-none bg-slate-200"/>
