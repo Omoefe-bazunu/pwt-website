@@ -38,7 +38,7 @@ const [toggle, setToggle] = useState(true);
       <div className="NavBar-Wrapper bg-purple-900 w-full">
         <div className="NavBar-Bg  my-0 mx-auto w-5/6 flex justify-between items-center h-20">
           <div className="Logo flex justify-start items-center gap-4">
-          <img src="../src/assets/pwtLogo.png" alt="pwt-logo" className="w-14" />
+          <img src="" alt="pwt-logo" className="w-14" />
           <h1 className="text-white text-xl font-bold">PHENOMENAL WORLD TRADE</h1>
           </div>
           <div className="NavLinks text-whit my-0 h-full text-white" >

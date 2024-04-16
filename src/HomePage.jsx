@@ -1,3 +1,4 @@
+import { AdminPage } from "./pageComponents/AdminPage"
 import { AboutUsSection } from "./pageComponents/Homepage/AboutUsSection"
 import { ContactUsSection } from "./pageComponents/Homepage/ContactUsSection"
 import { FeaturedSection } from "./pageComponents/Homepage/FeaturedSection"
