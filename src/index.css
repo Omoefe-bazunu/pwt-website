@@ -256,6 +256,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .ContactUsForm input {
+    text-align: center;
+  }
+
   .ContactUsForm input::placeholder, .ContactUsForm textarea::placeholder {
     text-align: center;
   }
