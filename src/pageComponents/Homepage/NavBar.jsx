@@ -1,12 +1,34 @@
 
-import { useState } from "react";
 import { TfiList } from "react-icons/tfi";
 import { TfiClose } from "react-icons/tfi";
 import { NavLink } from "react-router-dom";
+import { storage } from "../firebase";
+import { ref, getDownloadURL } from "firebase/storage";
+import {useState, useEffect} from 'react'
 
 
 export const NavBar = () =>{
 const [toggle, setToggle] = useState(true);
+
+
+
+  // DOWNLOAD LOGO IMAGE
+  const [logo, setLogo] = useState('');
+
+  useEffect(() => {
+    // Function to fetch the image from Firebase Storage
+    const fetchImage = async () => {
+      const imageRef = ref(storage, 'images/logo.png'); // Replace with the actual path to your image in Firebase Storage
+      try {
+        const url = await getDownloadURL(imageRef);
+        setLogo(url); // Set the downloaded image URL as the background
+      } catch (error) {
+        console.error('Error fetching image:', error);
+      }
+    };
+
+    fetchImage();
+  }, []); // Run this effect only once when the component mounts
 
   return (
     <div className="NavBar-Wrapper w-full flex justify-center items-center flex-col sticky top-0">
@@ -38,7 +60,7 @@ const [toggle, setToggle] = useState(true);
       <div className="NavBar-Wrapper bg-purple-900 w-full">
         <div className="NavBar-Bg  my-0 mx-auto w-5/6 flex justify-between items-center h-20">
           <div className="Logo flex justify-start items-center gap-4">
-          <img src="" alt="pwt-logo" className="w-14" />
+          <img src={logo} alt="pwt-logo" className="w-14" />
           <h1 className="text-white text-xl font-bold">PHENOMENAL WORLD TRADE</h1>
           </div>
           <div className="NavLinks text-whit my-0 h-full text-white" >
