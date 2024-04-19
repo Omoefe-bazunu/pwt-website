@@ -91,13 +91,13 @@ export const ProjectsPage = () => {
     }
     const Project2 = {
       title: "DATA TRACKING AND ANALYSIS TEMPLATE(JVN PRODUCTS NIG LTD)",
-      briefInformation:  "This is a file nicknamed 'ENGINE FILE', (laughs), because of the role it was built to play for the company that used it. The file incorporates complex functions and tools in Microsoft Excel such as PIVOT TABLES, POWER QUERY, and more to form a reusable template made of up different sheets, each performing distinct functions but with a central goal, which was to retrieve external data from the company's website, transform the data, run calculations on the data, provide insights from the data, make forcast and track compliance. It was in effect meant to help the company's sales reps to achieve their respective monthly targets which translates to the achieving the company's overall target. This project was done in March, 2023",
+      briefInformation:  "This is a file nicknamed 'ENGINE FILE', (laughs), because of the role it was built to play for the company that used it. The file incorporates complex functions and tools in Microsoft Excel such as PIVOT TABLES, POWER QUERY, and more to form a reusable template made of up different sheets, each performing distinct functions but with a central goal, which was to retrieve external data from the company's website, transform the data, run calculations on the data, provide insights from the data, make forcast and track compliance. It was in effect meant to help the company's sales reps to achieve their respective monthly targets which translates to the achieving the company's overall target. This project was done in March, 2023.",
       clientReview: '"Impressive."'
   }
 
   const Project3 = {
     title: "PRIINTED FLYER DESIGN (LAURA CATERING SERVICES)",
-    briefInformation:  "This is a flyer design that was done for printing and offline use. It was requested by a client who needed a short-sized flyer to use to promote their catering services by handing out to the public. The client did not have any concept in mind, so we were left to be creative with the concept and produce something unique. We stood to the task by giving the client a design that make a stright point but did not fail to register a great imagery in the public eye. The logo on the design was also created by us.",
+    briefInformation:  "This is a flyer design that was done for printing and offline use. It was requested by a client who needed a short-sized flyer to use to promote their catering services by handing out to the public. The client did not have any concept in mind, so we were left to be creative with the concept and produce something unique. We stood to the task by giving the client a design that made a straight point but did not fail to register a great imagery in the public eye. The logo on the design was also created by us.",
     clientReview: '"This is nice. Thank you."'
 }
 

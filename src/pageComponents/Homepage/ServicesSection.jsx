@@ -86,7 +86,7 @@ export const ServicesSection = () => {
         }, []); // Run this effect only once when the component mounts
   
 
-    const WebFeatures = ['Responsive UI', 'Serach Engine Friendly', 'Zero Downtime', 'Continuous maintenance'];
+    const WebFeatures = ['Responsive UI', 'Search Engine Friendly', 'Zero Downtime', 'Continuous maintenance'];
     const DataAnalysisFeatures = ['Complete Solution', 'Simple Reusable Templates', 'Physical/Remote Tutorial'];
     const WritingFeatures = ['Professional CV/RESUME', 'Business Proposal', 'Ads Copies and Web Contents'];
     const DesignFeatures = ['Clear Message Delivery', 'Consistent Color Schemes, Typography, & Style', 'Attention Grabbing Visual'];

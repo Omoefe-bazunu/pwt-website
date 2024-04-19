@@ -21,7 +21,7 @@ export const BookPaymentPage = () => {
         <div className="BookPaymentPage-Inner w-5/6">
             <div className="mainCTA w-full flex place-items-center gap-x-5 mt-12 mb-5">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
-                <h3 className="bg-purple-900 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium">PAYMENT PROCEDURE</h3>
+                <h3 className="bg-purple-900 paymethod px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium">PAYMENT PROCEDURE</h3>
                 <div className="line h-px w-full bg-purple-950 "></div>
             </div>
             <div className="main w-full flex items-center justify-between gap-x-5 mt-10">
@@ -32,7 +32,7 @@ export const BookPaymentPage = () => {
             <div className="line partition h-0.5 w-full bg-purple-950 hidden mt-3"></div>
             <div className="PageHeadermain w-full flex items-center justify-between gap-x-5 mt-10">
                  <div className="line Option KKK h-0.5 w-full bg-purple-950 hidden"></div>
-                <h3 className="text-xl font-semibold Option2 w-fit text-nowrap text-center text-purple-950">OPTION 1 - DIRECT BANK TRANSFER</h3>
+                <h3 className="text-xl font-semibold Method Option2 w-fit text-nowrap text-center text-purple-950">OPTION 1 - DIRECT BANK TRANSFER</h3>
                 <div className="line Option h-0.5 w-full bg-purple-950"></div>
              </div>
              <div className="line partition h-0.5 w-full bg-purple-950 hidden mt-3"></div>
@@ -46,12 +46,12 @@ export const BookPaymentPage = () => {
             </div>
             <div className="WhtasAppLink w-full flex place-items-center gap-x-5 mb-16">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
-                <h3 className="bg-green-700 px-12 py-2 text-center w-fit text-nowrap BtnScale rounded-3xl text-white font-medium cursor-pointer"><a target="_blank" href="https://wa.me/2349043970401">CLICK TO WHATSAPP</a></h3>
+                <h3 className="bg-green-700 px-12 py-2 text-center paymethod  w-fit text-nowrap BtnScale rounded-3xl text-white font-medium cursor-pointer"><a target="_blank" href="https://wa.me/2349043970401">CLICK TO WHATSAPP</a></h3>
                 <div className="line h-px w-full bg-purple-950 "></div>
             </div>
             <div className="PageHeadermain w-full flex items-center justify-between gap-x-5">
                 <div className="line Option KKK h-0.5 w-full bg-purple-950 hidden"></div>
-                <h3 className="text-xl font-semibold Option2 w-fit text-nowrap text-center text-purple-950">OPTION 2 - PAY WITH SELAR LINK</h3>
+                <h3 className="text-xl font-semibold  Method Option2 w-fit text-nowrap text-center text-purple-950">OPTION 2 - PAY WITH SELAR LINK</h3>
                 <div className="line Option h-0.5 w-full bg-purple-950"></div>
              </div>
              <div className="line partition h-0.5 w-full bg-purple-950 hidden mt-3"></div>

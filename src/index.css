@@ -569,6 +569,11 @@
   margin-bottom: 25px;
 }
 
+.Featured-Inner .mainCTA h3, .ContactUsForm .mainCTA h3, .BookPaymentPage-Inner .paymethod  {
+  width: 100%;
+}
+
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -586,6 +591,22 @@
 
 .Option2 {
   font-size: medium;
+}
+
+.Featured-Inner .mainCTA h3, .ContactUsForm .mainCTA h3, .BookPaymentPage-Inner .paymethod  {
+  width: 100%;
+}
+
+.BookPaymentPage-Inner .Method {
+  width:100%;
+  text-wrap: wrap;
+  font-size: medium;
+
+}
+
+.BookPaymentPage-Inner .paymethod  {
+  font-size: small;
+
 }
 
 }

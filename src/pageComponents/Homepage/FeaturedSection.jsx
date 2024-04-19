@@ -100,7 +100,7 @@ export const FeaturedSection = () => {
                 <BooksTemplates id="Book3" BgImg={payDebt}/>
                 <BooksTemplates id="Book4" BgImg={moneyLessons}/>
             </div>
-            <div className=" " ><Link to="/BooksPage" className="font-semibold text-purple-800 cursor-pointer"><CTABtn title="SEE COLLECTIONS"  /></Link></div>
+            <Link to="/BooksPage" className="font-semibold text-purple-800 cursor-pointer"><CTABtn title="SEE COLLECTION"  /></Link>
         </div>
     </div>
   )
