@@ -1,9 +1,21 @@
-import {Link} from 'react-router-dom'
-import { CTABtn } from './Homepage/CTABtn'
-import { PageHeader } from './RoutedPages/PageHeader'
-import { SectionHeader } from './Homepage/SectionHeader'
+import { doc, onSnapshot} from 'firebase/firestore';
+import { dbase } from './firebase';
+import { useEffect } from 'react';
 
 export const BookPaymentPage = () => {
+
+    useEffect(() => {
+        const linkRef = doc(dbase, 'selarLink', 'PAmPT1UIqvPHXf1GrUHk');
+        onSnapshot(linkRef, (doc) => {
+            const link = doc.data();
+            const Selarlink = link.link
+            const BtnLink = document.getElementById('selarLink');
+            BtnLink.setAttribute('href', `${Selarlink}`);
+        })
+
+    }, []);
+
+
   return (
     <div className="BookPaymentPage-Wrapper w-full flex justify-center items-start flex-grow bg-white">
         <div className="BookPaymentPage-Inner w-5/6">
@@ -34,7 +46,7 @@ export const BookPaymentPage = () => {
             </div>
             <div className="WhtasAppLink w-full flex place-items-center gap-x-5 mb-16">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
-                <h3 className="bg-green-700 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"><a target="_blank" href="https://wa.me/2349043970401">CLICK TO WHATSAPP</a></h3>
+                <h3 className="bg-green-700 px-12 py-2 text-center w-fit text-nowrap BtnScale rounded-3xl text-white font-medium cursor-pointer"><a target="_blank" href="https://wa.me/2349043970401">CLICK TO WHATSAPP</a></h3>
                 <div className="line h-px w-full bg-purple-950 "></div>
             </div>
             <div className="PageHeadermain w-full flex items-center justify-between gap-x-5">
@@ -46,7 +58,7 @@ export const BookPaymentPage = () => {
              <p className=' mb-5 Instruction'>Click the link to get to the Selar Page, pay with your bank card or transfer and you will get the book instantly. DONT WORRY SELAR IS VERY SAFE FOR MAKING ONLINE PAYMENTS. WE ASSURE YOU THAT.</p>
              <div className="SelarLink w-full flex place-items-center gap-x-5 mb-12">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
-                <h3 className=" bg-fuchsia-800 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"><a href="https://selar.co/mcd76o" target="_blank">CLICK TO SELAR</a></h3>
+                <h3 className=" bg-fuchsia-800 px-12 py-2 text-center w-fit text-nowrap BtnScale rounded-3xl text-white font-medium cursor-pointer"><a href='' target="_blank" id="selarLink">CLICK TO SELAR</a></h3>
                 <div className="line h-px w-full bg-purple-950 "></div>
             </div>
 

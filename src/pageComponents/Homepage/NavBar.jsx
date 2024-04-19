@@ -50,10 +50,10 @@ const [toggle, setToggle] = useState(true);
 </p>
             </div>
             <div className="SocialLinks flex justify-end items-center gap-4">
-            <i className="fa-brands fa-whatsapp wp-icon cursor-pointer"></i>
-            <i className="fa-brands fa-facebook-f fb-icon cursor-pointer"></i>
-            <i className="fa-brands fa-instagram ig-icon cursor-pointer"></i>
-            <i className="fa-brands fa-linkedin-in ld-icon cursor-pointer"></i>
+            <a href="https://wa.me/message/XK26GM4NE2IXL1" target="_blank"><i className="fa-brands fa-whatsapp wp-icon cursor-pointer BtnScale"></i></a>
+            <a href="https://web.facebook.com/profile.php?id=61550826716588" target="_blank"><i className="fa-brands fa-facebook-f fb-icon cursor-pointer BtnScale"></i></a>
+            <a href="https://www.instagram.com/phenomenalwt01/?hl=en" target="_blank"><i className="fa-brands fa-instagram ig-icon cursor-pointer BtnScale"></i></a>
+            <a href="https://www.linkedin.com/in/omoefe-bazunu-651b72203" target="_blank"><i className="fa-brands fa-linkedin-in ld-icon cursor-pointer BtnScale"></i></a>
             </div>
         </div>
       </div>

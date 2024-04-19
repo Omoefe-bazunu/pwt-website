@@ -79,10 +79,12 @@
 
 /* SERVICES SECTION */
 .Service-Boxes-Wrapper {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 25px;
+  row-gap: 50px;
   grid-template-areas: 
-  "ServiceImage1  ServiceImage2 ServiceImage3";
+  "ServiceImage1  ServiceImage2"
+  "ServiceImage3 ServiceImage4";
 }
 
 #Box1 .Img {
@@ -94,11 +96,16 @@
 #Box3 .Img {
   grid-area: ServiceImage3;
 }
+#Box4 .Img {
+  grid-area: ServiceImage4;
+}
 
 /* PROJECT SECTION */
 
 .ProjectImages {
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
   grid-template-areas: 
   "p1 p2"
   "p3 p2";
@@ -199,10 +206,15 @@
     display: block;
   }
 
+
 }
 
 
 @media only screen and (max-width: 915px) {
+
+  .FooterLinks {
+    display: flex;
+  }
 
   .menu-link li{
     width: 200px;
@@ -233,7 +245,7 @@
     "ServiceImage1" 
     "ServiceImage2" 
     "ServiceImage3"
-    "ServiceImage3";
+    "ServiceImage4";
   }
 
   .AboutUs-Inner .Main {
@@ -444,31 +456,39 @@
 
   }
 
-  
-@media only screen and (max-width: 430px) {
-
-  .NavBar-Wrapper .Logo h1 {
-    font-size: large;
-    width: 180px;
-    line-height: 20px;
-  }
+@media only screen and (max-width: 600px) {
+  /* STYLES FOR THE LISTINGS PAGE */
 
   .Listings-Wrapper {
     text-align: center;
+
+  }
+
+  .Listings-Wrapper .TitleText {
+    /* display: none; */
+    font-size: large;
+    text-wrap: wrap;
+    text-align: center;
+    width: 100%;
+
   }
 
   .Description1, .Description2 {
-    text-align: center;
     padding: 0px 5px;
   }
 
-  .Title2 div, .Title3 div {
+  .Title2 div, .Title3 div, .TitleTextLine {
     display: none;
   }
 
   .Title2, .Title3 {
     justify-content: center;
     align-items: center;
+  }
+
+  .Title3 {
+    /* display: none; */
+    margin-top: 20px;
   }
 
 
@@ -479,6 +499,19 @@
     margin-top: 3px;
     margin-bottom: 10px;
   }
+}
+
+  
+@media only screen and (max-width: 430px) {
+
+  .NavBar-Wrapper .Logo h1 {
+    font-size: large;
+    width: 180px;
+    line-height: 20px;
+  }
+
+
+  /* STYLES FOR BOOK PAYMENT PAGE */
 
 .BookPaymentPage-Inner .Option {
   display: none;
@@ -555,4 +588,17 @@
   font-size: medium;
 }
 
+}
+
+/* button scale animation */
+.BtnScale, .Services-Inner .mainCTA h3, 
+.ContactUs-Inner .mainCTA h3, 
+.Featured-Inner .mainCTA h3 {
+  transition: transform 0.8s ease;
+}
+
+.BtnScale:hover, .Services-Inner .mainCTA h3:hover, 
+.ContactUs-Inner .mainCTA h3:hover, 
+.Featured-Inner .mainCTA h3:hover {
+  transform: scale(0.9);
 }

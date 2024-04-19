@@ -57,7 +57,7 @@ export const ContactUsSection = () => {
                     </div>
                     <textarea type="text" name="message" value={formData.message} onChange={handleChange} className="message w-full flex-grow rounded-3xl h-72 bg-slate-200 py-8 px-10 outline-none" placeholder="Briefly state what you want to enquire or tell us about. It can be a review, suggestion or demand for any of our services. We will respond within the shortest possible time. Thanks.."/>
                 </div>
-                <button type='submit' className=""><CTABtn title="SUBMIT MESSAGE"/></button>
+                <button type='submit' className=" "><CTABtn title="SUBMIT MESSAGE"/></button>
             </form>
         </div>
     </div>
