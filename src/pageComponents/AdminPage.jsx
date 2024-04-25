@@ -75,6 +75,25 @@ export const AdminPage = () => {
       });
   };
 
+    // BLOGADS
+    const [imageads, setads] = useState(null);
+
+    const handleFileChangeAds = (e) => {
+        if (e.target.files[0]) {
+          setads(e.target.files[0]);
+        }
+      };
+    
+      const handleUploadAds= () => {
+        const storageRef = ref(storage,`images/BlogAds/${imageads.name}`);
+        uploadBytes(storageRef, imageads).then((snapshot) => {
+            alert('UPLOADED');
+        }).catch((error) => {
+            console.log('ERROR WITH UPLOAD', error);
+        });
+    };
+  
+
   return (
     <div className="AdminPage-Wrapper w-full flex justify-center items-start flex-grow bg-white">
     <div className="AdminPage-Inner w-5/6 mb-24">
@@ -103,6 +122,13 @@ export const AdminPage = () => {
         <div className="w-full flex place-items-center gap-x-5">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
                 <button onClick={handleUploadBOOK} className=" bg-fuchsia-800 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"> BOOKS SECTION/PAGE</button>
+                <div className="line h-px w-full bg-purple-950"></div>
+        </div>
+
+        <input type='file' className="cursor-pointer w-full px-5 py-2 rounded-3xl bg-purple-400 mt-8 mb-12"  onChange={handleFileChangeAds}/>
+        <div className="w-full flex place-items-center gap-x-5">
+                <div className="line h-px w-full bg-purple-950 flex-grow"></div>
+                <button onClick={handleUploadAds} className=" bg-fuchsia-800 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"> ADS IMAGE</button>
                 <div className="line h-px w-full bg-purple-950"></div>
         </div>
 

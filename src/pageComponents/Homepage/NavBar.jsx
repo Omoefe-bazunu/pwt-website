@@ -64,10 +64,11 @@ const [toggle, setToggle] = useState(true);
           <h1 className="text-white text-xl font-bold">PHENOMENAL WORLD TRADE</h1>
           </div>
           <div className="NavLinks text-whit my-0 h-full text-white" >
-            <ul className="flex justify-end items-center gap-8 h-full p-0 m-0 cursor-pointer">
-              <li className="list-none no-underline bg-purple-600 border-b-2 border-white h-full px-5 flex items-center"><NavLink to="/" className="active">HOME</NavLink></li>
+            <ul className="flex justify-end items-center gap-y-8 h-full p-0 m-0 cursor-pointer">
+              <li className="list-none no-underline h-full flex items-center"><NavLink to="/" className="active">HOME</NavLink></li>
               <li className="list-none no-underline h-full flex items-center"><a href="#Services">SERVICES</a></li>
               <li className="list-none no-underline h-full flex items-center"><NavLink to="/ProjectsPage">PROJECTS</NavLink></li>
+              <li className="list-none no-underline h-full flex items-center"><NavLink to="/BlogHome">BLOG</NavLink></li>
               <li className="list-none no-underline h-full flex items-center"><a href="#About">ABOUT US</a></li>
               <li className="list-none no-underline h-full flex items-center"><a href="#Contact">CONTACT US</a></li>
             </ul>
@@ -81,11 +82,12 @@ const [toggle, setToggle] = useState(true);
        
       </div>
       {!toggle && (
-                  <div className='Bar flex flex-col scale-up-tr  w-fit h-fit pt-10 pb-28 bg-purple-800 px-2 absolute right-0 top-24 ' >
+                  <div className='Bar flex flex-col scale-up-tr  w-fit h-fit pt-10 pb-28 bg-purple-800 px-2 absolute right-0 top-24' >
                       <ul className='menu-link text-xl text-md px-4 text-white text-end w-fit text-nowrap flex justify-center flex-col align-center gap-y-4 font-light py-2'>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/">HOME</NavLink></li>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#Services">SERVICES</a></li>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/ProjectsPage">PROJECTS</NavLink></li>
+                        <li className="border-b-2 border-slate-300 pb-5 w-48"><NavLink to="/BlogHome">BLOG</NavLink></li>
                         <li className=" border-b-2 border-slate-300 pb-5 w-48"><a href="#About">ABOUT US</a></li>
                         <li className=" pb-5 w-48"><a href="#Contact">CONTACT US</a></li>
                        </ul>

@@ -176,6 +176,28 @@
   display: none;
 }
 
+.NavLinks ul li {
+  padding: 0px 16px;
+}
+
+.NavLinks ul li:hover {
+  background-color: blueviolet;
+  border-bottom: 2px solid white;
+}
+
+
+/* BLOG STYLES */
+
+.BlogLayout-Inner .NavBar ul li:hover {
+  background-color: rgb(243, 245, 221);
+  border-bottom: 2px solid white;
+}
+
+/* .BookBoxOverlay:hover {
+  display: block;
+  background-color: rgba(36, 34, 34, 0.5);
+} */
+
 
 /* RESPONSIVENESS */
 
@@ -206,6 +228,10 @@
     display: block;
   }
 
+/* BLOG */
+.Other-Posts .Text {
+  width:100%;
+}
 
 }
 
@@ -325,8 +351,130 @@
   display: block;
 }
 
+/* BLOG STYLES */
+
+
+.Blog-Wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
+.BlogLayout-Inner .categories {
+  font-weight: 600;
+}
+
+.Blog-Wrapper .BlogPosts .Post h2 {
+  font-size: 3rem;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+
+
+.Blog-Wrapper .BlogPosts .Post h3{
+font-size: 2rem;
+}
+
+.Blog-Wrapper .BlogPosts .Post p, .Other-Posts, .Blog-Wrapper .Login-Btn  {
+  font-size: 1.5rem;
+}
+
+
+.Other-Posts h1 {
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+
+}
+
+.Other-Posts h3 {
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+.Blog-Wrapper .Ads {
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  row-gap: 20px;
+}
+
+.BlogLayout-Inner ul {
+  display: none;
+} 
+
+.Ad-wrapper img {
+  height: 300%;
+}
+
+}
+
+@media only screen and (max-width: 853px) { 
+  .Other-Posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 350px;
+  }
+
+  .Other-Posts img {
+    width: 330px;
+  } 
+
+  .Other-Posts .Text {
+    gap:8px
+  }
+
+
+  .Other-Posts h3, .Other-Posts h1 {
+    line-height: 25px;
+    font-size: 1.3rem;
+  } 
+
+  .Other-Posts p {
+    font-size: 1rem;
+  } 
+
+  .Blog-Wrapper .Ads {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    row-gap: 25px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) { 
+/* BLOG STYLES */
+
+.Blog-Wrapper .BlogPosts .Post h2 {
+  font-size: 2rem;
+  line-height: 35px;
+  padding-bottom: 20px;
+}
+
+.Blog-Wrapper .BlogPosts .Post .Date{
+font-size: 1rem;
+}
+
+
+.Blog-Wrapper .BlogPosts .Post h3{
+font-size: 1.3rem;
+}
+
+.Blog-Wrapper .BlogPosts .Post p, .Other-Posts, .Blog-Wrapper .Login-Btn, .userComment, .userName, .Reactions p span  {
+  font-size: 1rem;
+}
+
+.Other-Posts h1 {
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+
+}
+
+
+.BlogLayout-Inner ul {
+  display: none;
+} 
+
+
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -546,6 +694,44 @@
   margin-top: 15px;
 }
 
+/* BLOG */
+
+
+.Blog-Wrapper .BlogPosts .Post, .Blog-Wrapper .Ads {
+  width: 350px;
+}
+
+.Blog-Wrapper .Ads {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.Blog-Wrapper .BlogPosts .Post p, 
+.Blog-Wrapper .BlogPosts .Post h3{
+  width: 110%;
+
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  .Blog-Wrapper .BlogPosts .Post, .commentsList {
+    width: 345px;
+  }
+  
+  .Blog-Wrapper .BlogPosts .Post p, 
+  .Blog-Wrapper .BlogPosts .Post h3{
+    width: 100%;
+  }
+
+  .commentList p {
+    width: 300px;
+  }
+
+  .Blog-Wrapper .Ads {
+    width: 330px;
+  }
+
 }
 
 @media only screen and (max-width: 380px) {
@@ -573,6 +759,9 @@
   width: 100%;
 }
 
+.Blog-Wrapper .Ads {
+  width: 300px;
+}
 
 }
 
@@ -604,22 +793,18 @@
 
 }
 
-.BookPaymentPage-Inner .paymethod  {
-  font-size: small;
-
-}
 
 }
 
 /* button scale animation */
 .BtnScale, .Services-Inner .mainCTA h3, 
 .ContactUs-Inner .mainCTA h3, 
-.Featured-Inner .mainCTA h3 {
+.Featured-Inner .mainCTA h3, .buy, .Comment-Btn {
   transition: transform 0.8s ease;
 }
 
 .BtnScale:hover, .Services-Inner .mainCTA h3:hover, 
 .ContactUs-Inner .mainCTA h3:hover, 
-.Featured-Inner .mainCTA h3:hover {
+.Featured-Inner .mainCTA h3:hover, .buy:hover, .Comment-Btn:hover{
   transform: scale(0.9);
 }

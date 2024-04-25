@@ -1,6 +1,12 @@
 
 import { HomePage } from "./HomePage";
 import { AdminPage } from "./pageComponents/AdminPage";
+import { BlogHome } from "./pageComponents/Blog/BlogHome";
+import BlogPostDetails from "./pageComponents/Blog/BlogPostDetails";
+import BusinessBlogPost from "./pageComponents/Blog/BusinessBlogPost";
+import CareerBlogPost from "./pageComponents/Blog/CareerBlogPost";
+import { CreateBlogPost } from "./pageComponents/Blog/CreateBlogPost";
+import TechBlogPost from "./pageComponents/Blog/TechBlogPost";
 import { BookPaymentPage } from "./pageComponents/BookPaymentPage";
 import { ErrorPage } from "./pageComponents/ErrorPage";
 import { HomeLayout } from "./pageComponents/HomeLayout";
@@ -21,6 +27,13 @@ const router = createBrowserRouter (
       <Route path="BooksPaymentPage" element={<BookPaymentPage />}/>
       <Route path="ContactPage" element={<ContactUsSection/>}/>
       <Route path="AdminPage" element={<AdminPage/>}/>
+      <Route path="BlogHome" element={<BlogHome />}>
+        <Route index element={<BusinessBlogPost />}/>
+        <Route path="CreateBlogPost" element={<CreateBlogPost/>}/>
+        <Route path="BlogPostDetails" element={<BlogPostDetails />}/>
+        <Route path="TechBlogPost" element={<TechBlogPost />}/>
+        <Route path="CareerBlogPost" element={<CareerBlogPost />}/>
+      </Route>
       <Route path="*" element={<ErrorPage/>}/>
     </Route>
   )
