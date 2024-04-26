@@ -369,6 +369,10 @@
   padding-bottom: 20px;
 }
 
+.Blog-Wrapper .BlogPosts .Post .Date{
+  font-size: 0.8rem;
+  }
+
 
 .Blog-Wrapper .BlogPosts .Post h3{
 font-size: 2rem;
@@ -759,9 +763,48 @@ font-size: 1.3rem;
   width: 100%;
 }
 
+/* BLOG */
 .Blog-Wrapper .Ads {
   width: 300px;
 }
+
+.Blog-Wrapper .BlogPosts .Post, .commentsList {
+  width: 300px;
+}
+
+/* .Blog-Wrapper .BlogPosts .Post p, 
+.Blog-Wrapper .BlogPosts .Post h3{
+  width: 100%;
+} */
+
+.Blog-Wrapper .BlogPosts .Post h2 {
+  font-size: 1.3rem;
+  line-height: 25px;
+}
+
+.Blog-Wrapper .BlogPosts .Post img {
+  width: 270px
+}
+
+.Blog-Wrapper .BlogPosts .Post .Date{
+font-size: 0.8rem;
+}
+
+
+.Blog-Wrapper .BlogPosts .Post h3{
+font-size: 1.2rem;
+}
+
+.Blog-Wrapper .BlogPosts .Post p, .Other-Posts, .Blog-Wrapper .Login-Btn, .userComment, .userName, .Reactions p span  {
+  font-size: 1rem;
+}
+
+.Other-Posts h1 {
+  font-size: 1.2rem;
+
+}
+
+
 
 }
 

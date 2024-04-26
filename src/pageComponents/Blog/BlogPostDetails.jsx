@@ -30,6 +30,7 @@ function BlogPostDetails() {
                 console.log(BlogPost)
                 const id = colDocSnap.id
                 setBlogId(id)
+                const author = BlogPost.author;
                 const date = BlogPost.date;
                 const mainTitle = BlogPost.mainTitle;
                 const sub1 = BlogPost.subTitle1
@@ -70,6 +71,7 @@ function BlogPostDetails() {
                 const p13 = BlogPost.p13
                 const bLineTitle = BlogPost.bLineTitle
                 const bLine = BlogPost.bLine
+                const Blogauthor = document.getElementById('author').innerText = author
                 const BlogDate = document.getElementById('date').innerText = date
                 const BlogTitle = document.getElementById('mainTitle').innerText = mainTitle
                 const Blogsub1 = document.getElementById('sub1').innerText = sub1
@@ -122,27 +124,19 @@ function BlogPostDetails() {
     <div className="BlogPosts h-fit w-full mb-12 ">
       <div className="Post mb-5 pr-8 pb-5  border-b border-slate-300">
           <h2 className="BlogTitle mb-2 font-semibold flex flex-col text-3xl text-gray-600 border-b border-slate-300 pb-2" id="mainTitle"></h2>
-          <p className="Date text-gray-500 mb-12 text-sm" id='date'>March 30, 2024</p>
+          <p className="Date text-gray-500 mb-12 text-sm"><span id='author'></span> |  <span id='date'></span></p>
           <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
           <h3 className='p1Title subTitle mb-2 text-xl font-medium text-gray-600' id='sub1'></h3>
           <p className='paragraph-one my-3 text-gray-600' id='p1'></p>
-          {/* <p className="Ul-list1 my-3 text-gray-600"></p>
-          <p className="Ol-list1 my-3 text-gray-600"></p> */}
           <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
           <h3 className='p2Title subTitle text-xl font-medium text-gray-600' id='sub2'></h3>
           <p className='p2 my-3 text-gray-600' id='p2'></p>
-          {/* <p className="Ul-list2 my-3 text-gray-600"></p>
-          <p className="Ol-list2 my-3 text-gray-600"></p> */}
           <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
           <h3 className='p3Title text-xl font-medium text-gray-600' id='sub3'></h3>
           <p className='p3 my-3 text-gray-600' id='p3'></p>
-          {/* <p className="Ul-list3 my-4 text-gray-600"></p>
-          <p className="Ol-list3 my-4 text-gray-600"></p> */}
           <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
           <h3 className='p4Title text-xl font-medium text-gray-600' id='sub4'></h3>
           <p className='p4 my-3 text-gray-600' id='p4'></p>
-          {/* <p className="Ul-list4 my-3 text-gray-600"></p>
-          <p className="Ol-list4 my-3 text-gray-600"></p> */}
           <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
           <h3 className='p5Title text-xl font-medium text-gray-600' id='sub5'></h3>
           <p className='p5 my-3 text-gray-600' id='p5'></p>
@@ -170,17 +164,11 @@ function BlogPostDetails() {
               <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
               <h3 className='p13Title text-xl font-medium text-gray-600' id='sub13'></h3>
               <p className='p13 my-3 text-gray-600' id='p13'></p>
-          {/* <p className="Ul-list5 my-3 text-gray-600"></p>
-          <p className="Ol-list5 my-3 text-gray-600"></p> */}
           <img src="" alt="" className=" w-96 bg-slate-300 h-64 my-8 hidden" />
           <h3 className='bottomLineTitle mb-2 font-medium text-xl text-gray-600' id='bLineTitle'></h3>
           <p className='bottomLine mb-5 text-gray-600' id='bLine'></p>
       </div>
       <BlogResponse id={BlogId} />
-      
-      {/* <div className="SeeAll py-4 px-7 cursor-pointer font-medium bg-purple-800 text-white w-fit text-nowrap text-sm mt-5" >
-        <Link to='/Business' >SEE ALL POSTS</Link>
-        </div> */}
     </div>
     <BlogPageAds />
 

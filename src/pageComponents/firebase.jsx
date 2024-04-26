@@ -2,6 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 import { getFirestore} from "firebase/firestore";
+import {getAuth, onAuthStateChanged} from 'firebase/auth';
+import { getAnalytics } from "firebase/analytics";
 
 
 const firebaseConfig = {
@@ -10,12 +12,20 @@ const firebaseConfig = {
   projectId: "phenomenalwt-65cad",
   storageBucket: "gs://phenomenalwt-65cad.appspot.com",
   messagingSenderId: "486426077376",
-  appId: "1:486426077376:web:d999e843a1c5c39a512525"
+  appId: "1:486426077376:web:d999e843a1c5c39a512525",
+  measurementId: "G-JDE3C4QY1Y"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const dbase = getFirestore(app);
+const auth = getAuth(app);
+const analytics = getAnalytics(app);
 
-export { storage, dbase, app as default };
+onAuthStateChanged(auth, (user) => {
+  console.log('ADMIN LOGGED IN')
+})
+
+
+export { storage, dbase, auth, app, analytics as default };

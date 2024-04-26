@@ -1,5 +1,6 @@
 
 import { HomePage } from "./HomePage";
+import { AdminLogin } from "./pageComponents/AdminLogin";
 import { AdminPage } from "./pageComponents/AdminPage";
 import { BlogHome } from "./pageComponents/Blog/BlogHome";
 import BlogPostDetails from "./pageComponents/Blog/BlogPostDetails";
@@ -27,6 +28,7 @@ const router = createBrowserRouter (
       <Route path="BooksPaymentPage" element={<BookPaymentPage />}/>
       <Route path="ContactPage" element={<ContactUsSection/>}/>
       <Route path="AdminPage" element={<AdminPage/>}/>
+      <Route path="AdminLogin" element={<AdminLogin/>}/>
       <Route path="BlogHome" element={<BlogHome />}>
         <Route index element={<BusinessBlogPost />}/>
         <Route path="CreateBlogPost" element={<CreateBlogPost/>}/>

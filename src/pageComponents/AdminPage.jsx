@@ -92,10 +92,29 @@ export const AdminPage = () => {
             console.log('ERROR WITH UPLOAD', error);
         });
     };
+
+        // BLOGPOST
+        const [imageBlog, setBlog] = useState(null);
+
+        const handleFileChangeBlog = (e) => {
+            if (e.target.files[0]) {
+              setBlog(e.target.files[0]);
+            }
+          };
+        
+          const handleUploadBlog= () => {
+            const storageRef = ref(storage,`images/BlogImages/${imageBlog.name}`);
+            uploadBytes(storageRef, imageBlog).then((snapshot) => {
+                alert('UPLOADED');
+            }).catch((error) => {
+                console.log('ERROR WITH UPLOAD', error);
+            });
+        };
+      
   
 
   return (
-    <div className="AdminPage-Wrapper w-full flex justify-center items-start flex-grow bg-white">
+    <div className="AdminPage-Wrapper w-full justify-center items-start flex-grow bg-white flex" id='adminpage'>
     <div className="AdminPage-Inner w-5/6 mb-24">
     <input type='file' className="cursor-pointer w-full px-5 py-2 rounded-3xl bg-purple-400 mt-24 mb-10"  onChange={handleFileChangeHERO}/>
         <div className="w-full flex place-items-center gap-x-5 mb-12">
@@ -129,6 +148,14 @@ export const AdminPage = () => {
         <div className="w-full flex place-items-center gap-x-5">
                 <div className="line h-px w-full bg-purple-950 flex-grow"></div>
                 <button onClick={handleUploadAds} className=" bg-fuchsia-800 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"> ADS IMAGE</button>
+                <div className="line h-px w-full bg-purple-950"></div>
+        </div>
+
+        
+        <input type='file' className="cursor-pointer w-full px-5 py-2 rounded-3xl bg-purple-400 mt-8 mb-12"  onChange={handleFileChangeBlog}/>
+        <div className="w-full flex place-items-center gap-x-5">
+                <div className="line h-px w-full bg-purple-950 flex-grow"></div>
+                <button onClick={handleUploadBlog} className=" bg-fuchsia-800 px-12 py-2 text-center w-fit text-nowrap rounded-3xl text-white font-medium cursor-pointer"> BLOG POST IMAGE</button>
                 <div className="line h-px w-full bg-purple-950"></div>
         </div>
 
