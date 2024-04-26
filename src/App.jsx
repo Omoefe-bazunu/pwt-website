@@ -30,10 +30,10 @@ const router = createBrowserRouter (
       <Route path="AdminPage" element={<AdminPage/>}/>
       <Route path="AdminLogin" element={<AdminLogin/>}/>
       <Route path="BlogHome" element={<BlogHome />}>
-        <Route index element={<BusinessBlogPost />}/>
+        <Route index element={<TechBlogPost />}/>
+        <Route path="BusinessBlogPost" element={<BusinessBlogPost />}/>
         <Route path="CreateBlogPost" element={<CreateBlogPost/>}/>
         <Route path="BlogPostDetails" element={<BlogPostDetails />}/>
-        <Route path="TechBlogPost" element={<TechBlogPost />}/>
         <Route path="CareerBlogPost" element={<CareerBlogPost />}/>
       </Route>
       <Route path="*" element={<ErrorPage/>}/>

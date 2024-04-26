@@ -6,7 +6,7 @@ import { ref, getDownloadURL } from "firebase/storage";
 function BlogPageAds() {
     const AdsTexts = {
         ad1: 'NEW TO EXCEL or seeking to pursue a career in BUSINESS DATA ANALYSIS? Get this GREAT COURSE with carefully crafted video lessons and A FREE MENTORSHIP from the creator himself. ',
-        ad2: ' LEARN to create official documents as LETTERS, REPORTS, CV/RESUMEs, TESTIMONIALS, SEMINARs etc with Microsoft WORD from beginner to advanced from this VIDEO COURSE',
+        ad2: ' LEARN to create official documents as LETTERS, REPORTS, CV/RESUMEs, TESTIMONIALS, SEMINARs etc. with Microsoft WORD from beginner to advance from this VIDEO COURSE',
         ad3: '',
         ad4: '',
         ad5: '',
@@ -141,7 +141,7 @@ function BlogPageAds() {
             <img src={ads1Image} alt="" className="Ads1 w-full bg-slate-300 h-72 flex-grow bg-cover bg-no-repeat bg-center" />
             <div className="mainCTA w-full flex place-items-center gap-x-5 mt-2 px-4">
         <div className="line h-px w-full bg-gray-600 flex-grow"></div>
-        <a href='#'><h3 className="buy px-5 py-2 bg-amber-300 text-center mb-3 w-fit text-nowrap text-gray-600 font-bold cursor-pointer text-sm">GET COURSE</h3></a>
+        <a href='https://selar.co/mcd76o' target="_blank"><h3 className="buy px-5 py-2 bg-amber-300 text-center mb-3 w-fit text-nowrap text-gray-600 font-bold cursor-pointer text-sm">GET COURSE</h3></a>
         <div className="line h-px w-full bg-gray-600 "></div>
     </div>
           </div>
@@ -150,7 +150,7 @@ function BlogPageAds() {
             <img src={ads2Image} alt="" className="Ads1 w-full bg-slate-300 h-72 flex-grow bg-cover bg-no-repeat bg-center" />
             <div className="mainCTA w-full flex place-items-center gap-x-5 mt-2 px-4">
         <div className="line h-px w-full bg-gray-600 flex-grow"></div>
-        <a href='#'><h3 className=" buy px-5 py-2 bg-amber-300 mb-3 text-center w-fit text-nowrap text-gray-600 font-bold cursor-pointer text-sm">GET COURSE</h3></a>
+        <a href='https://selar.co/44x4wa' target="_blank"><h3 className=" buy px-5 py-2 bg-amber-300 mb-3 text-center w-fit text-nowrap text-gray-600 font-bold cursor-pointer text-sm">GET COURSE</h3></a>
         <div className="line h-px w-full bg-gray-600 "></div>
     </div>
           </div>
